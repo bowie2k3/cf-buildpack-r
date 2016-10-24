@@ -76,7 +76,7 @@ R_BINARIES="http://${S3_BUCKET}.s3.amazonaws.com/R-${R_VERSION}-binaries-${BUILD
 
 VENDOR_DIR="$BUILD_DIR/vendor"
 R_HOME="$VENDOR_DIR/R"
-CRAN_MIRROR="http://cran.revolutionanalytics.com"
+CRAN_MIRROR="http://cran.rstudio.com"
 
 mkdir -p $CACHE_DIR
 
