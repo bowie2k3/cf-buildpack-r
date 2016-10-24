@@ -87,9 +87,9 @@ echo "Vendoring R $R_VERSION" | indent
 # download and unpack binaries
 echo "Downloading and unpacking R binaries" | indent
 mkdir -p $VENDOR_DIR && mkdir -p /app/vendor
-curl $R_BINARIES -s -o r_binaries.tar.gz
-tar xzf r_binaries.tar.gz -C $VENDOR_DIR
-rm r_binaries.tar.gz
+#curl $R_BINARIES -s -o r_binaries.tar.gz
+tar xzf $R_BINARIES -C $VENDOR_DIR
+rm $R_BINARIES
 
 echo "Directory created, R pulled, unpacked" | indent
 
